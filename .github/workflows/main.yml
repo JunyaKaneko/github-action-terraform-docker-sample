@@ -5,6 +5,8 @@ jobs:
         runs-on: ubuntu-latest
         name: A job to run terraform
         steps:
+        - name: Checkout
+          uses: actions/checkout@v1
         - name: terraform action step
           id: terraform_sample
           uses: JunyaKaneko/github-action-terraform-docker-sample@master

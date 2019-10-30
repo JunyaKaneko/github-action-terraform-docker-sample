@@ -7,6 +7,6 @@ jobs:
         steps:
         - name: terraform action step
           id: terraform_sample
-          uses: JunyaKaneko/github-action-terraform-docker-sample
+          uses: JunyaKaneko/github-action-terraform-docker-sample@master
           with:
               tfdir: 

@@ -1,0 +1,13 @@
+name: 'Github action terraform docker sample'
+description: 'Github action terraform docker sample'
+inputs:
+    tfdir:
+        description: 'directory having tf files.'
+        required: true
+        default: './terraform'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.tfdir }}
+
